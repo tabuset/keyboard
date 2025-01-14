@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>鍵盤楽器アプリ</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-family: Arial, sans-serif;
+        }
+        .keyboard {
+            display: flex;
+            gap: 4px;
+            margin-top: 50px;
+        }
+        .key {
+            width: 40px;
+            height: 120px;
+            background-color: white;
+            border: 1px solid black;
+            box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+        }
+        .key.black {
+            background-color: black;
+            color: white;
+            height: 80px;
+            margin-left: -20px;
+            margin-right: -20px;
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+    <h1>鍵盤楽器アプリ</h1>
+    <div class="keyboard">
+        <div class="key" data-note="C4"></div>
+        <div class="key black" data-note="C#4"></div>
+        <div class="key" data-note="D4"></div>
+        <div class="key black" data-note="D#4"></div>
+        <div class="key" data-note="E4"></div>
+        <div class="key" data-note="F4"></div>
+        <div class="key black" data-note="F#4"></div>
+        <div class="key" data-note="G4"></div>
+        <div class="key black" data-note="G#4"></div>
+        <div class="key" data-note="A4"></div>
+        <div class="key black" data-note="A#4"></div>
+        <div class="key" data-note="B4"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
